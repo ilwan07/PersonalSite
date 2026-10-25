@@ -1,14 +1,14 @@
 :root {
     --text-color: #000000;
     --bg-color: #e2ece8;
-    --main-color: #ff7f35;
+    --main-color: #2eb386;
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
         --text-color: #ffffff;
         --bg-color: #1d1f1e;
-        --main-color: #ef6110;
+        --main-color: #075c3f;
     }
 
     .inv {
@@ -67,4 +67,26 @@ footer {
     padding: 0.6rem;
     display: flex;
     flex-direction: row;
+    align-items: center;
+}
+
+footer a {
+    font-size: 1.2rem;
+}
+
+footer img {
+    max-height: 1.8rem;
+    margin-left: 1rem;
+    margin-right: 0.4rem;
+}
+
+footer #footer-left {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+footer #footer-right {
+    display: flex;
+    align-items: center;
 }
