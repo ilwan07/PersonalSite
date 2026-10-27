@@ -46,6 +46,12 @@ a, p, label, h1, h2, h3, h4, h5, h6 {
     color: var(--text-color);
 }
 
+@media (max-width: 600px) {
+    p {
+        text-align: justify;
+    }
+}
+
 span.tspace {
     vertical-align:-0.5rem;
 }
@@ -116,6 +122,13 @@ main h3 {
     margin-right: 2rem;
 }
 
+@media (max-width: 600px) {
+    #stacktbl h3 {
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+    }
+}
+
 .tbline {
     display: flex;
     flex-direction: row;
@@ -124,22 +137,32 @@ main h3 {
 }
 
 .tbline img {
-    height: 10rem;
+    height: 9rem;
+    transition-duration: 0.1s;
+}
+
+.tbline img:hover {
+    transform: scale(1.2);
 }
 
 .tbline a {
-    margin: 2.6rem;
+    margin: 2.2rem;
     margin-bottom: 1rem;
 }
 
 @media (max-width: 600px) {
     .tbline img {
-        height: 6rem;
+        height: 5.5rem;
     }
     .tbline a {
-        margin: 1.6rem;
+        margin: 1.2rem;
         margin-bottom: 1rem;
     }
+}
+
+td p {
+    font-size: 1.05rem;
+    margin-bottom: 1rem;
 }
 
 footer {
