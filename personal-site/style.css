@@ -19,8 +19,18 @@
 
 * {
     margin: 0;
-    font-family: 'Trebuchet MS', sans-serif;
+    font-family: "Trebuchet MS", "serif";
     color: var(--text-color);
+}
+
+html {
+    font-size: 100%;
+}
+
+@media (max-width: 600px) {
+    html {
+        font-size: 85%;
+    }
 }
 
 body {
@@ -29,17 +39,20 @@ body {
     flex-direction: column;
     min-height: 100vh;
     overflow-wrap: break-word;
-    background-color: var(--bg-color);
+    background-color: var(--main-color);
 }
 
 a, p, label, h1, h2, h3, h4, h5, h6 {
     color: var(--text-color);
 }
 
+span.tspace {
+    vertical-align:-0.5rem;
+}
+
 header {
     background-color: var(--main-color);
-    padding-bottom: 1rem;
-    padding-top: 1rem;
+    padding: 1rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -48,6 +61,7 @@ header {
 
 header h1 {
     font-size: 3.6rem;
+    text-align: center;
 }
 
 header img {
@@ -56,10 +70,76 @@ header img {
 }
 
 main {
+    text-align: center;
     flex-grow: 1;
     padding: 1rem;
     padding-bottom: 1.5rem;
     background-color: var(--bg-color);
+}
+
+main h2 {
+    font-size: 1.8rem;
+}
+
+main h3 {
+    font-size: 1.4rem;
+}
+
+#intro {
+    margin-top: 0.6rem;
+}
+
+#intro h2 {
+    margin-bottom: 1rem;
+}
+
+#intro p {
+    font-size: 1.2rem;
+}
+
+@keyframes downarr_anim {
+    50% {transform: translateY(1.6rem);}
+    100% {transform: translateY(0);}
+}
+
+#downarr {
+    max-width: 3.4rem;
+    margin-top: 1.4rem;
+    margin-bottom: 8rem;
+    animation-name: downarr_anim;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+#stacktbl h3 {
+    margin-right: 2rem;
+}
+
+.tbline {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.tbline img {
+    height: 10rem;
+}
+
+.tbline a {
+    margin: 2.6rem;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 600px) {
+    .tbline img {
+        height: 6rem;
+    }
+    .tbline a {
+        margin: 1.6rem;
+        margin-bottom: 1rem;
+    }
 }
 
 footer {
@@ -89,4 +169,17 @@ footer #footer-left {
 footer #footer-right {
     display: flex;
     align-items: center;
+}
+
+@keyframes github-footer_anim {
+    25% {transform: rotate(15deg);}
+    75% {transform: rotate(-15deg);}
+    100% {transform: rotate(0deg);}
+}
+
+#github-footer:hover {
+    animation-name: github-footer_anim;
+    animation-duration: 180ms;
+    animation-iteration-count: 2;
+    animation-timing-function: ease;
 }

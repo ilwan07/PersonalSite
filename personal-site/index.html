@@ -17,9 +17,53 @@
         <h1>Welcome to Ilwân's website!</h1>
     </header>
     <main>
-        <h1>
-            Hello!
-        </h1>
+        <div id="intro">
+            <h2>
+                Hey there!
+            </h2>
+            <p>
+                I'm Ilwân, a French developer making some projects here and there.
+                I particularily like to make GUI or web applications, mainly using Python.
+                <span class="tspace"></span><br>
+                Some of my best ones include a YouTube downloader and converter, a personal
+                diary that doubles as a time capsule, or an app to count the money in your piggy bank!
+                <span class="tspace"></span><br>
+                You can find out more about my projects, tech stack and profiles below.
+                <span class="tspace"></span><br>
+            </p>
+            <img id="downarr" src="/imgs/downarr.svg" alt="down arrow" class="inv">
+        </div>
+        <div id="tech-stack">
+            <h2>
+                Tech stack
+            </h2>
+            <br>
+            <table id="stacktbl">
+                <tr>
+                    <td><h3>General</h3></td>
+                    <td>
+                        <div class="tbline">
+                            <a href="https://wikipedia.org/wiki/Linux" target="_blank">
+                                <img src="/imgs/linux.svg" alt="Linux" title="Linux">
+                            </a>
+                            <a href="https://en.wikipedia.org/wiki/Unix_shell" target="_blank">
+                                <img src="/imgs/bash.svg" alt="Unix Shell" title="Unix Shell" class="inv">
+                            </a>
+                            <a href="https://www.raspberrypi.com/" target="_blank">
+                                <img src="/imgs/rpi.svg" alt="Raspberry Pi" title="Raspberry Pi">
+                            </a>
+                            <a href="https://git-scm.com/" target="_blank">
+                                <img src="/imgs/git.svg" alt="Git" title="Git">
+                            </a>
+                            <a href="https://inkscape.org/" target="_blank">
+                                <img src="/imgs/inkscape.svg" alt="Inkscape" title="Inkscape">
+                            </a>
+                        </div>
+                        <p>some text here</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
     </main>
     <footer>
         <div id="footer-left">
@@ -28,7 +72,7 @@
         <div id="footer-right">
             <a href="https://www.gnu.org/licenses/gpl-3.0.html" title="License" target="_blank">GPL-3.0 License</a>
             <a href="https://github.com/ilwan07/PersonalSite" title="GitHub" target="_blank">
-                <img src="/imgs/github.svg" alt="GitHub" class="inv">
+                <img src="/imgs/github.svg" alt="GitHub" class="inv" id="github-footer">
             </a>
         </div>
     </footer>
